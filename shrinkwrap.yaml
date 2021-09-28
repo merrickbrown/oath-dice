@@ -1,5 +1,6 @@
 dependencies:
   plotly.js: 2.5.1
+  rc-slider: 9.7.2
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.0.9
@@ -249,6 +250,14 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==
+  /@babel/runtime/7.15.4:
+    dependencies:
+      regenerator-runtime: 0.13.9
+    dev: false
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
   /@babel/template/7.14.5:
     dependencies:
       '@babel/code-frame': 7.14.5
@@ -746,6 +755,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ZqDmQBGBbjcZaCj9yMjBRzEshjQ=
+  /classnames/2.3.1:
+    dev: false
+    resolution:
+      integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
   /clean-pslg/1.1.2:
     dependencies:
       big-rat: 1.0.4
@@ -1108,6 +1121,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-I3JIbrnKPAntNLl1I6TpSQQdQ4AutYzv/sKMFKbepawV/hlH0GmYKhUoOEMd4xqaUHT+Bm0f4127lh5qs1m1tw==
+  /dom-align/1.12.2:
+    dev: false
+    resolution:
+      integrity: sha512-pHuazgqrsTFrGU2WLDdXxCFabkdQDx72ddkraZNih1KsMcN5qsRSTR9O4VJRlwTPCPb5COYg3LOfiMHHcPInHg==
   /double-bits/1.1.1:
     dev: false
     resolution:
@@ -2056,6 +2073,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+  /lodash/4.17.21:
+    dev: false
+    resolution:
+      integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -2630,6 +2651,82 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Dd4rZrezS7G80qI4BerIBth/0X8=
+  /rc-align/4.0.11:
+    dependencies:
+      '@babel/runtime': 7.15.4
+      classnames: 2.3.1
+      dom-align: 1.12.2
+      lodash: 4.17.21
+      rc-util: 5.14.0
+      resize-observer-polyfill: 1.5.1
+    dev: false
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    resolution:
+      integrity: sha512-n9mQfIYQbbNTbefyQnRHZPWuTEwG1rY4a9yKlIWHSTbgwI+XUMGRYd0uJ5pE2UbrNX0WvnMBA1zJ3Lrecpra/A==
+  /rc-motion/2.4.4:
+    dependencies:
+      '@babel/runtime': 7.15.4
+      classnames: 2.3.1
+      rc-util: 5.14.0
+    dev: false
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    resolution:
+      integrity: sha512-ms7n1+/TZQBS0Ydd2Q5P4+wJTSOrhIrwNxLXCZpR7Fa3/oac7Yi803HDALc2hLAKaCTQtw9LmQeB58zcwOsqlQ==
+  /rc-slider/9.7.2:
+    dependencies:
+      '@babel/runtime': 7.15.4
+      classnames: 2.3.1
+      rc-tooltip: 5.1.1
+      rc-util: 5.14.0
+      shallowequal: 1.1.0
+    dev: false
+    engines:
+      node: '>=8.x'
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    resolution:
+      integrity: sha512-mVaLRpDo6otasBs6yVnG02ykI3K6hIrLTNfT5eyaqduFv95UODI9PDS6fWuVVehVpdS4ENgOSwsTjrPVun+k9g==
+  /rc-tooltip/5.1.1:
+    dependencies:
+      '@babel/runtime': 7.15.4
+      rc-trigger: 5.2.10
+    dev: false
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    resolution:
+      integrity: sha512-alt8eGMJulio6+4/uDm7nvV+rJq9bsfxFDCI0ljPdbuoygUscbsMYb6EQgwib/uqsXQUvzk+S7A59uYHmEgmDA==
+  /rc-trigger/5.2.10:
+    dependencies:
+      '@babel/runtime': 7.15.4
+      classnames: 2.3.1
+      rc-align: 4.0.11
+      rc-motion: 2.4.4
+      rc-util: 5.14.0
+    dev: false
+    engines:
+      node: '>=8.x'
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    resolution:
+      integrity: sha512-FkUf4H9BOFDaIwu42fvRycXMAvkttph9AlbCZXssZDVzz2L+QZ0ERvfB/4nX3ZFPh1Zd+uVGr1DEDeXxq4J1TA==
+  /rc-util/5.14.0:
+    dependencies:
+      '@babel/runtime': 7.15.4
+      react-is: 16.13.1
+      shallowequal: 1.1.0
+    dev: false
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    resolution:
+      integrity: sha512-2vy6/Z1BJUcwLjm/UEJb/htjUTQPigITUIemCcFEo1fQevAumc9sA32x2z5qyWoa9uhrXbiAjSDpPIUqyg65sA==
   /react-dom/17.0.2:
     dependencies:
       loose-envify: 1.4.0
@@ -2806,6 +2903,10 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-jcrkcOHIirwtYA//Sndihtp15jc=
+  /resize-observer-polyfill/1.5.1:
+    dev: false
+    resolution:
+      integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
   /resolve-protobuf-schema/2.1.0:
     dependencies:
       protocol-buffers-schema: 3.6.0
@@ -3474,6 +3575,7 @@ packages:
     dev: false
     name: box-intersect
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/box-intersect/tar.gz/6deda2d28ec87932aceda0d03348931f4eee8c23'
     version: 1.1.0
   github.com/plotly/incremental-convex-hull/fd5b74716942453b9b5e9e94fb754923bc7e4c9c:
@@ -3483,6 +3585,7 @@ packages:
     dev: false
     name: incremental-convex-hull
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/incremental-convex-hull/tar.gz/fd5b74716942453b9b5e9e94fb754923bc7e4c9c'
     version: 1.1.0
   github.com/plotly/ndarray-extract-contour/7fd14e1e27348ce3cd665a54044aeaa56631ebe9:
@@ -3491,6 +3594,7 @@ packages:
     dev: false
     name: ndarray-extract-contour
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/ndarray-extract-contour/tar.gz/7fd14e1e27348ce3cd665a54044aeaa56631ebe9'
     version: 1.1.0
   github.com/plotly/ndarray-gradient/aa6fdc88f99f85972ca91043a66251d43d4431d3:
@@ -3499,12 +3603,14 @@ packages:
     dev: false
     name: ndarray-gradient
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/ndarray-gradient/tar.gz/aa6fdc88f99f85972ca91043a66251d43d4431d3'
     version: 1.1.0
   github.com/plotly/ndarray-ops/b5fe1e58468a5e3f26fb618c19e8b0cc9eff1691:
     dev: false
     name: ndarray-ops
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/ndarray-ops/tar.gz/b5fe1e58468a5e3f26fb618c19e8b0cc9eff1691'
     version: 1.3.0
   github.com/plotly/ndarray-pack/ba2b7a1599e7b4437006a3fa90e067d03af1e6ec:
@@ -3513,6 +3619,7 @@ packages:
     dev: false
     name: ndarray-pack
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/ndarray-pack/tar.gz/ba2b7a1599e7b4437006a3fa90e067d03af1e6ec'
     version: 1.3.0
   github.com/plotly/ndarray-sort/d07cb45b614bb64357a7aea8830de2937b91d519:
@@ -3521,6 +3628,7 @@ packages:
     dev: false
     name: ndarray-sort
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/ndarray-sort/tar.gz/d07cb45b614bb64357a7aea8830de2937b91d519'
     version: 1.1.0
   github.com/plotly/ndarray/6123ae3ab0806828b689fca410a3dd5d0246c186:
@@ -3529,6 +3637,7 @@ packages:
     dev: false
     name: ndarray
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/ndarray/tar.gz/6123ae3ab0806828b689fca410a3dd5d0246c186'
     version: 1.1.0
   github.com/plotly/robust-determinant/e68340ca884dbb90e5d90d1a812bcbaf8af2b246:
@@ -3540,6 +3649,7 @@ packages:
     dev: false
     name: robust-determinant
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/robust-determinant/tar.gz/e68340ca884dbb90e5d90d1a812bcbaf8af2b246'
     version: 1.2.1
   github.com/plotly/robust-linear-solve/239021e085a9987615f3334d02dcabb2d4c61ec4:
@@ -3548,6 +3658,7 @@ packages:
     dev: false
     name: robust-linear-solve
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/robust-linear-solve/tar.gz/239021e085a9987615f3334d02dcabb2d4c61ec4'
     version: 1.1.1
   github.com/plotly/simplicial-complex-contour/c6fb05096d9b7575387447df0bd5e711fd31b676:
@@ -3557,6 +3668,7 @@ packages:
     dev: false
     name: simplicial-complex-contour
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/simplicial-complex-contour/tar.gz/c6fb05096d9b7575387447df0bd5e711fd31b676'
     version: 1.1.0
   github.com/plotly/surface-nets/03de0d15e5579b8da1ada752ed4d16e854a22ccd:
@@ -3566,12 +3678,14 @@ packages:
     dev: false
     name: surface-nets
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/surface-nets/tar.gz/03de0d15e5579b8da1ada752ed4d16e854a22ccd'
     version: 1.1.1
   github.com/plotly/zero-crossings/24cb54b1e35a387b78c2794b14627d6effe0c9d5:
     dev: false
     name: zero-crossings
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/plotly/zero-crossings/tar.gz/24cb54b1e35a387b78c2794b14627d6effe0c9d5'
     version: 1.1.0
 registry: 'https://registry.npmjs.org/'
@@ -3580,6 +3694,7 @@ shrinkwrapVersion: 3
 specifiers:
   '@vitejs/plugin-react-refresh': ^1.3.6
   plotly.js: ^2.5.0
+  rc-slider: ^9.7.2
   react: ^17.0.2
   react-dom: ^17.0.2
   react-helmet-async: ^1.0.9
