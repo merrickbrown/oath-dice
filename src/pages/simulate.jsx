@@ -46,10 +46,6 @@ const MySlider = props => {
   );
 };
 
-const format = (num, d) => {
-  Math.round(Math.pow(10,d) * num)/Math.pow(10,d);
-}
-
 export default function Simulate() {
   const [dd, setDD] = useState(1);
   const [aw, setAW] = useState(3);
