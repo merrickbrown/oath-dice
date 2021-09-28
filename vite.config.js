@@ -6,6 +6,17 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 export default defineConfig({
   assetsInclude: ['./src/data/**.json'],
   plugins: [reactRefresh()],
+//   rollupOptions: {
+//     external: [
+//       //'react', 
+//       //'react-dom',
+      
+//     ],
+//     globals: {
+//       //'react': 'React',
+//       //'react-dom': 'ReactDOM'
+//     },
+//   },
   build: {
     outDir: "build"
   },

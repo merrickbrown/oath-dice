@@ -1,5 +1,7 @@
-import Plot from "react-plotly.js";
 import * as React from "react";
+import Plotly from 'plotly.js-basic-dist-min'
+import createPlotlyComponent from 'react-plotly.js/factory';
+const Plot = createPlotlyComponent(Plotly);
 
 export default function DicePlot(props) {
   const data = props.data;
