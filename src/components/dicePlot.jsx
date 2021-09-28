@@ -59,9 +59,7 @@ export default function DicePlot(props) {
     },
     font: {
       size: 18
-    },
-    tickvals: [...data.remaining, data.expectedBands],
-    ticktext: [...data.remaining, data.expectedBands]
+    }
   };
 
   return (
