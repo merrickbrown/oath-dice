@@ -18,7 +18,7 @@ export default defineConfig({
   },
   build: {
     outDir: "build",
-    minify: false
+    minify: "esbuild"
   },
   base: "/oath-campaign/",
   server: {
